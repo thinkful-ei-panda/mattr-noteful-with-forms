@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto&family=Squada+One&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #08dbf7;
+  color: #fff;
+}
+
+main{
+  display:flex;
+  width:70%;
+  margin:auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin:0px;
+  text-transform: uppercase;
+  color: #00559b;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+header{
+  text-align: left;
+  width:70%;
+  margin:15px auto;
+
+}
+
+.folder-active{
+  text-align: center;
+  padding:15px;
+  background-color: #eb00eb;
+  margin: 0 0 5px 0;
+}
+
+.folderslist{
+  flex:1;
+  display:flex;
+  flex-direction: column;
+}
+
+.folder {
+  text-align: center;
+  padding:15px;
+  background-color:#37474f;
+  margin: 0 0 5px 0;
+}
+
+.noteslist{
+  flex:2;
+  flex-direction: row;
+  padding:0 0 5px 5px;;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  padding:15px;
+  margin: 0 0 5px 0;
+  background-color: #62727b;
+}
+
+button {
+  background-color: #bbdefb;
+  padding:15px 30px;
+  border:0px;
+  max-width: 140px;
+}
+
+form {
+  width:30rem;
+}
+
+input {
+  height:2rem;
+  width:100%;
+  margin: 0 0 10px 0;
+}
+
+select {
+  height:2.5rem;
+  width:100%;
+  margin: 0 0 10px 0;
+}
+
+link {
+  cursor: pointer;
+}
