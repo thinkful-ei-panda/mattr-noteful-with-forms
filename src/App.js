@@ -9,6 +9,8 @@ import AddNote from './Notes/AddNote'
 import ErrorBoundary from './ErrorBoundary'
 
 class App extends React.Component{
+  static contextType=AppContext;
+
   state = {
     currentFolder:null,
     currentNote:null,
@@ -34,7 +36,7 @@ class App extends React.Component{
 
   componentDidMount(){
     this.setState({loading:true})
-    fetch(`http://localhost:9090/db`)
+    fetch(`http://localhost:8000/db`)
     .then(response => response.json())
     .then(data => {
       this.setState({
